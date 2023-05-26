@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+    --ligthgray: rgb(218, 218, 218);
+    --backgroundwhite: rgb(240, 240, 240);
+    --niceblue: rgb(76, 0, 255);
+}
+
+body {
+    background-color: var(--backgroundwhite);
+}
+
+/*NAVIGATION BAR START*/
+
+.navbar {
+    width: 100%;
+    height: 15vh;
+    background-color: var(--ligthgray);
+}
+
+#check {
+    display: none;
+}
+
+.checkbars {
+    float: right;
+    line-height: 80px;
+    font-size: 3.2em;
+    margin: 10px 15px 0 0;
+    cursor: pointer;
+}
+
+#bar {
+    color: var(--niceblue);
+}
+
+/*NAVIGATION BAR END*/
+
+/*MAIN SECTION START*/
+
+section {
+    width: 100%;
+    height: calc(100vh);
+    padding: 25px;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/*PRESENTATION START*/
+
+#presentation {
+    width: 90%;
+    height: calc(100vh - 20vh);
+    border-radius: 10px;
+    background-color: var(--ligthgray);
+    margin-bottom: 20px;
+    
+}
+
+#presentation h2 {
+    color: var(--niceblue);
+    font-size: 18px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+#presentation h1 {
+    font-family: 'Notable', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 4px double var(--niceblue);
+}
+
+#presentation p {
+    font-weight: 300;
+    text-align: justify;
+    width: 90%;
+}
+
+/*ABOUT SECTION START*/
+
+#about {
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+#about h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#about img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-weight: 300;
+    width: 90%;
+}
+/*ABOUT SECTION END*/
+
+/*PRESENTATION END*/
+
+/*MAIN SECTION END*/
