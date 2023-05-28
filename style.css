@@ -7,16 +7,25 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
 
 :root {
     --ligthgray: rgb(218, 218, 218);
     --backgroundwhite: rgb(240, 240, 240);
     --niceblue: rgb(76, 0, 255);
+    --yellowmellow: rgb(255, 217, 0);
 }
 
 body {
     background-color: var(--backgroundwhite);
+}
+
+.titles {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--niceblue);
 }
 
 /*NAVIGATION BAR START*/
@@ -24,7 +33,7 @@ body {
 .navbar {
     width: 100%;
     height: 15vh;
-    background-color: var(--ligthgray);
+    background-color: var(--niceblue);
 }
 
 #check {
@@ -33,6 +42,7 @@ body {
 
 .checkbars {
     float: right;
+    position: relative;
     line-height: 80px;
     font-size: 3.2em;
     margin: 10px 15px 0 0;
@@ -40,8 +50,38 @@ body {
 }
 
 #bar {
-    color: var(--niceblue);
+    color: var(--backgroundwhite);
 }
+
+.navicons {
+    position: fixed;
+    width: 250px;
+    right: -100%;
+    height: calc(100vh);
+    background-color: var(--niceblue);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in;
+}
+
+.navicons .navicon {
+    margin: 20px;
+    padding: 10px;
+}
+
+.navicons .navicon a {
+    color: black;
+    margin-left: 10px;
+    letter-spacing: 2px;
+}
+
+#check:checked ~ .navicons {
+    right: 0;
+}
+
 
 /*NAVIGATION BAR END*/
 
@@ -64,7 +104,6 @@ section {
     width: 90%;
     height: calc(100vh - 20vh);
     border-radius: 10px;
-    background-color: var(--ligthgray);
     margin-bottom: 20px;
     
 }
@@ -92,9 +131,12 @@ section {
     width: 90%;
 }
 
+/*PRESENTATION END*/
+
 /*ABOUT SECTION START*/
 
 #about {
+    background-color: var(--ligthgray);
     padding: 20px;
     width: 100%;
     height: 100vh;
@@ -108,8 +150,9 @@ section {
 }
 
 #about img {
-    width: 100%;
-    border-radius: 10px;
+    width: 80%;
+    height: 70%;
+    border-radius: 100%;
     margin-bottom: 20px;
 }
 
@@ -117,8 +160,57 @@ section {
     font-weight: 300;
     width: 90%;
 }
+
 /*ABOUT SECTION END*/
 
-/*PRESENTATION END*/
+/*QUALITIES SECTION START*/
+
+#qualities {
+    padding: 0;
+    height: 95vh;
+}
+
+#qualities h2 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+#containerq {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.info {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.qualitybox {
+    width: 45%;
+    height: 80%;
+    background-color: var(--ligthgray);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.qualitybox i {
+    font-size: 1.8em;
+    color: var(--niceblue);
+}
+
+/*QUALITIES SECTION END*/
 
 /*MAIN SECTION END*/
