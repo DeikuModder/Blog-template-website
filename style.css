@@ -14,8 +14,15 @@
 :root {
     --ligthgray: rgb(218, 218, 218);
     --backgroundwhite: rgb(240, 240, 240);
-    --niceblue: rgb(76, 0, 255);
+    --niceblue: rgb(44, 99, 202);
     --yellowmellow: rgb(255, 217, 0);
+
+    --gradientblue: linear-gradient(
+        90deg,
+        rgb(79, 165, 182) 20%,
+        rgb(36, 81, 179) 80%,
+        rgb(30, 30, 156)
+    );
 }
 
 body {
@@ -25,7 +32,7 @@ body {
 .titles {
     border-radius: 5px;
     padding: 10px;
-    background-color: var(--niceblue);
+    background: var(--gradientblue);
     margin-bottom: 20px;
     font-size: 2rem;
     font-weight: 600;
@@ -36,7 +43,7 @@ body {
 .navbar {
     width: 100%;
     height: 15vh;
-    background-color: var(--niceblue);
+    background: var(--gradientblue)
 }
 
 header p {
@@ -44,7 +51,7 @@ header p {
     display: inline;
     position: absolute;
     width: 30%;
-    top: 15px;
+    top: 20px;
     left: 10px;
     color: beige;
     text-align: center;
@@ -72,7 +79,12 @@ header p {
     width: 250px;
     right: -100%;
     height: calc(100vh);
-    background-color: var(--niceblue);
+    background: linear-gradient(
+        180deg,
+        rgb(77, 170, 207),
+        rgb(15, 35, 150)
+        
+    );
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -127,9 +139,12 @@ section {
 }
 
 #presentation h2 {
-    color: var(--niceblue);
+    background-image: var(--gradientblue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     margin: 20px 0;
 }
 
@@ -137,14 +152,17 @@ section {
     font-family: 'Notable', sans-serif;
     font-size: 2rem;
     letter-spacing: 2px;
+    border-radius: 30px;
     font-weight: 700;
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-    border-bottom: 4px double var(--niceblue);
+    margin-bottom: 20px;
+    color: var(--ligthgray);
+    padding: 20px;
+    background: var(--gradientblue);
 }
 
 #presentation p {
     font-weight: 300;
+    font-size: 18px;
     text-align: justify;
     width: 90%;
 }
@@ -162,7 +180,7 @@ section {
 
 #about img {
     width: 80%;
-    height: 70%;
+    height: 40%;
     border-radius: 100%;
     margin-bottom: 20px;
 }
