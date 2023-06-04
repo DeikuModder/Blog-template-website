@@ -135,7 +135,6 @@ section {
     height: calc(100vh - 20vh);
     border-radius: 10px;
     margin-bottom: 20px;
-    
 }
 
 #presentation h2 {
@@ -155,7 +154,7 @@ section {
     border-radius: 30px;
     font-weight: 700;
     margin-bottom: 20px;
-    color: var(--ligthgray);
+    color: rgb(48, 48, 48);
     padding: 20px;
     background: var(--gradientblue);
 }
@@ -257,7 +256,7 @@ section {
     width: 70%;
     height: 90%;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid rgb(105, 105, 105);
 }
 
 .projectcard img {
@@ -271,7 +270,9 @@ section {
     font-size: 12px;
 }
 
-
+#projectspart2 {
+    margin: 0;
+}
 
 /*PROJECTS SECTION END*/
 
@@ -285,8 +286,13 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid var(--niceblue);
-    border-radius: 30px;
+    border: 4px solid;
+    background: linear-gradient(
+        180deg,
+        var(--backgroundwhite) 50%,
+        var(--ligthgray)
+    );
+    border-image: var(--gradientblue) 1;
 }
 
 .fa-brands {
