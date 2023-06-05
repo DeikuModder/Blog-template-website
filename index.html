@@ -6,30 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/051bb2f8c7.js" crossorigin="anonymous"></script>
+    <script src="navbar.js" defer></script>
     <title>Portfolio Page</title>
 </head>
 <body>
-    <nav class="navbar">
-        <!-- Here goes the logo img you want -->
-        <header id="headerimg">
-            <p>YOUR LOGO/NAME HERE</p>
-        </header>
+    <header>
+        <p>YOUR LOGO/NAME HERE</p>
 
-        <input type="checkbox" name="" id="check">
-        <label for="check" class="checkbars
-        "><i class="fa-solid fa-bars" id="bar"></i></label>
+        <nav class="navbar">
 
-        <ul class="navicons">
-
-            <li class="navicon"><i class="fa-solid fa-hand"><a href="#presentation">WELCOME</a></i></li>
-            <li class="navicon"><i class="fa-solid fa-circle-info"><a href="#about">ABOUT</a></i></li>
-            <li class="navicon"><i class="fa-solid fa-shield-halved"><a href="#qualities">QUALITIES</a></i></li>
-            <li class="navicon"><i class="fa-solid fa-list"><a href="#projects">PROJECTS</a></i></li>
-            <li class="navicon"><i class="fa-solid fa-circle-info"><a href="#contact">CONTACT</a></i></li>
-        </ul>
-
-    </nav>
-
+            <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-controls="navicons" aria-expanded="false"></button>
+            
+    
+            <ul class="navicons" id="navicons" data-visible="false">
+    
+                <li class="navicon"><i class="fa-solid fa-hand"><a href="#presentation">WELCOME</a></i></li>
+                <li class="navicon"><i class="fa-solid fa-circle-info"><a href="#about">ABOUT</a></i></li>
+                <li class="navicon"><i class="fa-solid fa-shield-halved"><a href="#qualities">QUALITIES</a></i></li>
+                <li class="navicon"><i class="fa-solid fa-list"><a href="#projects">PROJECTS</a></i></li>
+                <li class="navicon"><i class="fa-solid fa-circle-info"><a href="#contact">CONTACT</a></i></li>
+            </ul>
+    
+        </nav>
+    
+    </header>
+    
     <main class="maindoc">
         <section id="presentation">
             <h2 class="presentationText">

@@ -28,6 +28,7 @@
 
 body {
     background-color: var(--backgroundwhite);
+    overflow-x: hidden;
 }
 
 .titles {
@@ -40,6 +41,32 @@ body {
 }
 
 /*NAVIGATION BAR START*/
+
+.mobile-nav-toggle {
+    position: absolute;
+    aspect-ratio: 1;
+    width: 2.6rem;
+    top: 1.5rem;
+    right: 1.5rem;
+    background-image: url(./assets/svg-icons/bars-solid.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    transition: all .4s ease-out;
+    z-index: 9999;
+}
+
+.mobile-nav-toggle[aria-expanded="true"]{
+    background-image: url(./assets/svg-icons/xmark-solid.svg);
+    transition: all .4s ease-in;
+    position: fixed;
+    width: 3rem;
+}
+
+.fa-bars {
+    font-size: 2.5rem;
+    color: var(--backgroundwhite);
+}
 
 .navbar {
     width: 100%;
@@ -58,63 +85,51 @@ header p {
     text-align: center;
 }
 
-#check {
-    display: none;
-}
-
-.checkbars {
-    float: right;
-    position: relative;
-    line-height: 80px;
-    font-size: 3.2em;
-    margin: 10px 15px 0 0;
-    cursor: pointer;
-}
-
-#bar {
-    color: var(--backgroundwhite);
-}
-
 .navicons {
     position: fixed;
     width: 250px;
-    right: -100%;
-    height: calc(100vh);
-    background: linear-gradient(
-        180deg,
-        rgb(77, 170, 207),
-        rgb(15, 35, 150)
-        
-    );
+    right: 0;
+    transform: translateX(100%);
+    height: 100vh;
+    background: hsl(0 0% 0% / 0.8);
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.4s ease-in;
+    z-index: 1000;
+}
+
+.navicons[data-visible="true"]{
+    transform: translateX(0%);
+
 }
 
 .navicons .navicon {
     margin: 20px;
     padding: 10px;
     border: 2px solid;
-    border-image: linear-gradient(
-        90deg,
-        var(--ligthgray) 65%,
-        var(--backgroundwhite)
-    ) 1;
+    border-image: linear-gradient(90deg, red, blue) 1;
 }
 
 .navicons .navicon a {
-    color: black;
+    color: var(--niceblue);
     margin-left: 10px;
     letter-spacing: 2px;
 }
 
-#check:checked ~ .navicons {
-    right: 0;
-}
 
+@supports (backdrop-filter: blur(1.5rem)) {
+    .navicons {
+        background: hsl(250 100% 20% / 0.1);
+        backdrop-filter: blur(1.5rem);
+    }
+
+    .navicons .navicon a {
+        color: black;
+    }
+}
 
 /*NAVIGATION BAR END*/
 
