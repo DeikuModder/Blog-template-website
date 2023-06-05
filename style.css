@@ -136,7 +136,7 @@ header p {
 
 section {
     width: 100%;
-    height: calc(100vh);
+    height: 100vh;
     padding: 25px;
     margin: 15px auto 0 auto;
     display: flex;
@@ -149,7 +149,6 @@ section {
 
 #presentation {
     width: 90%;
-    height: calc(100vh - 20vh);
     border-radius: 10px;
     margin-bottom: 20px;
 }
