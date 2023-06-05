@@ -1,3 +1,5 @@
+//Responsive side navbar
+
 const navBar = document.getElementById("navicons");
 const navBtn = document.getElementById("mobile-nav-toggle");
 
@@ -13,4 +15,8 @@ navBtn.addEventListener("click", () => {
         navBtn.setAttribute("aria-expanded", false);
     }
 })
+
+//Dark mode switch
+
+const darkModeBtn = document.querySelector(".buttonBckground");
 

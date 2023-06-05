@@ -16,6 +16,9 @@
     --backgroundwhite: rgb(240, 240, 240);
     --niceblue: rgb(44, 99, 202);
     --yellowmellow: rgb(255, 217, 0);
+    --bordergray: rgb(105, 105, 105);
+    --black: black;
+    --grayh1: rgb(48, 48, 48);
 
     --gradientblue: linear-gradient(
         90deg,
@@ -23,6 +26,10 @@
         rgb(36, 81, 179) 80%,
         rgb(30, 30, 156)
     );
+
+    --redtoblue: linear-gradient(90deg, red, blue) 1;
+
+    --footercolor: rgb(20, 20, 20);
 
 }
 
@@ -46,7 +53,7 @@ body {
     position: absolute;
     aspect-ratio: 1;
     width: 2.6rem;
-    top: 1.5rem;
+    top: 1.9rem;
     right: 1.5rem;
     background-image: url(./assets/svg-icons/bars-solid.svg);
     background-color: transparent;
@@ -68,6 +75,38 @@ body {
     color: var(--backgroundwhite);
 }
 
+.buttonBckground {
+    position: fixed;
+    top: 88vh;
+    right: 2rem;
+
+    display: grid;
+    place-content: end;
+
+    width: 22%;
+    height: fit-content;
+
+    border-radius: 30px;
+
+    z-index: 9998;
+    padding: 5px;
+
+    background-color: var(--yellowmellow);
+    
+}
+
+.darkModeToggle {
+    aspect-ratio: 1;
+    width: 1.7rem;
+    background-image: url(./assets/svg-icons/circle-half-stroke-solid.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    transition: all 0.4s ease-in
+}
+
+
+
 .navbar {
     width: 100%;
     height: 15vh;
@@ -81,7 +120,7 @@ header p {
     width: 30%;
     top: 20px;
     left: 10px;
-    color: beige;
+    color: var(--backgroundwhite);
     text-align: center;
 }
 
@@ -110,7 +149,7 @@ header p {
     margin: 20px;
     padding: 10px;
     border: 2px solid;
-    border-image: linear-gradient(90deg, red, blue) 1;
+    border-image: var(--redtoblue);
 }
 
 .navicons .navicon a {
@@ -185,7 +224,7 @@ section {
     border-radius: 30px;
     font-weight: 700;
     margin-bottom: 20px;
-    color: rgb(48, 48, 48);
+    color: var(--grayh1);
     padding: 20px;
     border: 4px solid;
     border-image: radial-gradient(
@@ -231,7 +270,7 @@ section {
 
 #qualities {
     padding: 0;
-    height: 95vh;
+    height: 100vh;
 }
 
 #containerq {
@@ -240,7 +279,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    padding: 0 20px 0 20px;
 }
 
 .info {
@@ -261,6 +300,10 @@ section {
     );
     padding: 10px;
     border-radius: 40px;
+}
+
+.info:last-of-type {
+    margin-bottom: 0;
 }
 
 .qualitybox {
@@ -297,7 +340,7 @@ section {
     width: 70%;
     height: 90%;
     border-radius: 10px;
-    border: 1px solid rgb(105, 105, 105);
+    border: 1px solid var(--bordergray);
 }
 
 .projectcard img {
@@ -339,7 +382,7 @@ section {
     padding: 10px;
     margin: 10px;
     font-size: 13px;
-    color: black;
+    color: var(--black);
     background-color: var(--niceblue);
     letter-spacing: 4px;
 }
@@ -357,7 +400,7 @@ footer {
     font-weight: 300;
     font-style: italic;
     font-size: 14px;
-    background-color: rgb(19, 19, 19);
+    background-color: var(--footercolor);
     display: flex;
     flex-direction: center;
     align-items: center;
