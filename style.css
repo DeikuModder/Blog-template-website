@@ -31,6 +31,18 @@
 
     --footercolor: rgb(20, 20, 20);
 
+    --gradientyellow: radial-gradient(
+        circle at top left,
+        var(--yellowmellow),
+        transparent
+    );
+
+    --transformPerspective: 
+    perspective(250px)
+    rotateX(10deg)
+    translateY(-5%)
+    translateZ(0);
+
 }
 
 body {
@@ -94,7 +106,9 @@ body {
 
     background-color: var(--yellowmellow);
 
-    transition: all 0.4s ease-in
+    transition: all 0.4s ease-in;
+
+    cursor: pointer;
     
 }
 
@@ -105,7 +119,8 @@ body {
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
-    transition: all 0.2s ease-in
+    transition: all 0.2s ease-in;
+    cursor: pointer;
 }
 
 .buttonBckground[data-visible="true"]{
@@ -265,6 +280,7 @@ section {
     aspect-ratio: 1;
     border-radius: 100%;
     margin-bottom: 20px;
+    transition: all .2s ease-in;
 }
 
 #about p {
@@ -349,6 +365,7 @@ section {
     height: 90%;
     border-radius: 10px;
     border: 1px solid var(--bordergray);
+    transition: all .2s ease-in;
 }
 
 .projectcard img {
@@ -393,6 +410,7 @@ section {
     color: var(--black);
     background-color: var(--niceblue);
     letter-spacing: 4px;
+    transition: all .2s ease-in;
 }
 
 

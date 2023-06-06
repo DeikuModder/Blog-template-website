@@ -1,3 +1,5 @@
+@import url(./style.css);
+
 @media (min-width: 1024px){
 
     header p {
@@ -91,4 +93,101 @@
         font-size: 16px;
         justify-content: space-between  ;
     }
+}
+
+@media (min-width: 1240px){
+    header p {
+        top: 40px;
+        font-size: 18px ;
+    }
+
+    .navicons {
+        width: 80%;
+    }
+
+    .navicon {
+        width: 14%;
+        height: 40%;
+        font-size: 15px;
+    }
+
+    .navicon:hover {
+        transform: scale(1.1);
+        transition: all .2s ease-in;
+        border-image: linear-gradient(270deg, red, blue) 1;
+    }
+
+    .buttonBckground {
+        width: 70px;
+    }
+
+    #presentation h2 {
+        font-size: 35px;
+    }
+
+    #presentation h1 {
+        font-size: 3rem;
+        width: 100%;
+        padding: 40px 0 40px 0;
+    }
+
+    #presentation p {
+        font-size: 25px;
+    }
+
+    #about img:hover {
+        transform: var(--transformPerspective);
+        transition: all .2s ease-in;
+    }
+
+    #about p {
+        font-size: 20px;
+    }
+
+    .info {
+        font-size: 18px;
+    }
+
+    .info:hover {
+        transform: scale(1.05);
+        transition: all .3s ease-in;
+        background: var(--gradientyellow);
+
+        .qualitybox i {
+            color: var(--yellowmellow);
+        }
+    }
+
+    .qualitybox {
+        aspect-ratio: 1;
+        width: 20%;
+    }
+
+    .projectcard:hover {
+        transform: var(--transformPerspective);
+        transition: all .2s ease-in;
+    }
+
+    .projectcard a h4 {
+        font-size: 18px;
+    }
+
+    .fa-brands {
+        font-size: 20px;
+    }
+
+    .fa-brands:hover {
+        transform: scale(1.07);
+        transition: all .2s ease-in;
+        background: var(--gradientyellow);
+    }
+
+    footer {
+        font-size: 20px;
+    }
+
+    footer a i {
+        border-radius: 100%;
+    }
+
 }
