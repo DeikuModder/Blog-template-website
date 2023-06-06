@@ -11,6 +11,10 @@
     text-decoration: none;
 }
 
+html[data-color="true"]{
+    color-scheme: dark;
+}
+
 :root {
     --ligthgray: rgb(218, 218, 218);
     --backgroundwhite: rgb(240, 240, 240);
@@ -47,8 +51,6 @@
 
 body {
     overflow-x: hidden;
-
-
 }
 
 .titles {
@@ -126,7 +128,7 @@ body {
 .buttonBckground[data-visible="true"]{
     background-color: rgb(29, 29, 95);
     place-content: start;
-    transition: all 0.2s ease-in
+    transition: all 0.2s ease-in;
 }
 
 .navbar {
