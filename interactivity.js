@@ -20,3 +20,13 @@ navBtn.addEventListener("click", () => {
 
 const darkModeBtn = document.querySelector(".buttonBckground");
 
+darkModeBtn.addEventListener("click", () => {
+    const visi = darkModeBtn.getAttribute("data-visible");
+
+    if (visi === "false"){
+        darkModeBtn.setAttribute("data-visible", true);
+    }
+    else {
+        darkModeBtn.setAttribute("data-visible", false);
+    }
+}) 

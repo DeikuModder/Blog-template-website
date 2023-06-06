@@ -1,0 +1,94 @@
+@media (min-width: 1024px){
+
+    header p {
+        border-radius: 0;
+        width: fit-content;
+        top: 35px;
+    }
+
+    .mobile-nav-toggle {
+        display: none;
+    }
+
+    .navicons {
+        position: relative;
+        float: right;
+        background: transparent;
+        backdrop-filter: none;
+        width: 75%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: start;
+        height: 15vh;
+        transform: none;
+        padding: 0;
+        transition: none;
+    }
+
+    .navicon {
+        width: 13%;
+        font-size: 11px;
+        display: grid;
+        place-content: center;
+        margin: 0;
+    }
+
+    .navicon a {
+        margin-left: 0;
+        letter-spacing: 0;
+        color: var(--backgroundwhite);
+    }
+
+    .buttonBckground {
+        position: relative;
+        top: 0;
+        right: 0;
+        display: grid;
+        width: 50px;
+        transition: none;
+    }
+
+    #presentation h2 {
+        font-size: 30px;
+    }
+
+    #presentation h1 {
+        width: 80%;
+        font-size: 2.5rem;
+    }
+
+    #presentation p {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #about img {
+        width: 28%;
+    }
+
+    #about p {
+        font-size: 18px;
+    }
+
+    #qualities {
+        padding: 20px;
+    }
+
+    #containerq {
+        width: 50%;
+    }
+
+    .projectscard {
+        width: 50%;
+        height: fit-content;
+    }
+
+    .border {
+        width: 50%;
+    }
+
+    footer {
+        font-size: 16px;
+        justify-content: space-between  ;
+    }
+}
